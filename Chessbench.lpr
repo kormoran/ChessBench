@@ -1,4 +1,4 @@
-program Lazchess;
+program Chessbench;
 
 {$mode objfpc}{$H+}
 

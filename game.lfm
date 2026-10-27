@@ -1,0 +1,58 @@
+object Form1: TForm1
+  Left = 810
+  Height = 739
+  Top = 120
+  Width = 773
+  BorderStyle = bsDialog
+  Caption = 'Form1'
+  ClientHeight = 739
+  ClientWidth = 773
+  Menu = MainMenu1
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 716
+    Width = 773
+    Panels = <>
+  end
+  object BoardGrid: TDrawGrid
+    Left = 0
+    Height = 512
+    Top = 0
+    Width = 512
+    ColCount = 8
+    DefaultRowHeight = 64
+    FixedCols = 0
+    FixedRows = 0
+    HeaderHotZones = []
+    RowCount = 8
+    ScrollBars = ssNone
+    TabOrder = 1
+    OnDrawCell = BoardGridDrawCell
+    OnMouseDown = BoardGridMouseDown
+    OnMouseMove = BoardGridMouseMove
+    OnMouseUp = BoardGridMouseUp
+  end
+  object MovesTree: TTreeView
+    Left = 520
+    Height = 718
+    Top = 0
+    Width = 252
+    Anchors = [akTop, akLeft, akBottom]
+    TabOrder = 2
+  end
+  object CommentMemo: TMemo
+    Left = 0
+    Height = 202
+    Top = 516
+    Width = 512
+    Anchors = [akLeft, akBottom]
+    TabOrder = 3
+  end
+  object MainMenu1: TMainMenu
+    Left = 457
+    Top = 158
+  end
+end
